@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone :true,
+  imports: [RouterOutlet,
+    RouterLink,
+    NavbarComponent,
+    MatButtonModule
+    
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

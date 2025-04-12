@@ -1,0 +1,43 @@
+<mat-toolbar class="navbar" color="primary">
+    <img src="https://png.pngtree.com/png-clipart/20230815/original/pngtree-community-vector-icon-illustration-design-help-home-hand-vector-picture-image_10781751.png" alt="WeCare Logo" class="logo-img">
+    <span class="logo-text">WeCare_Hospitals</span>
+    <span class="spacer"></span>
+    <span class="contact-info">📞 Call Us: +1 234 567 8901</span>
+  </mat-toolbar>
+
+  <div class="home-container">
+    <h1 class="h1class">We are the heart oppropriate care </h1>
+    <div class="cards-container">
+      <!-- Coach Card -->
+      <mat-card class="action-card">
+        <mat-card-header>
+          <mat-card-title>Coach Portal</mat-card-title>
+          <mat-card-subtitle>Start your coaching journey</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Help users grow and thrive by joining our coach community.</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-flat-button color="primary" [routerLink]="'/coach-signup'">Join as a Coach</button>
+          <button mat-stroked-button color="accent" [routerLink]="'/coach-login'">Login as a Coach</button>
+        </mat-card-actions>
+      </mat-card>
+  
+      <!-- User Card -->
+      <mat-card class="action-card">
+        <mat-card-header>
+          <mat-card-title>User Portal</mat-card-title>
+          <mat-card-subtitle>Find your perfect life coach</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Connect with certified coaches for your personal growth journey.</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-flat-button color="primary" [routerLink]="'/user-signup'">Join as a User</button>
+          <button mat-stroked-button color="accent" [routerLink]="'/user-login'">Login as a User</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  
